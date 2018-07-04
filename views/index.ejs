@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="application/javascript" src="/javascripts/scripts.js"></script>
+  </head>
+  <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="inst-nav" id="piano-sec">Piano</a></li>
+        <li><a class="inst-nav" id="flute-sec">Flute</a></li>
+        <li><a class="inst-nav" id="violin-sec">Violin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1><%= title %></h1>
+    <p>Welcome to my <%= title %></p>
+    <!---This is the first page of soundboard: piano section--->
+    <section class="inst-sec" id ="piano">
+      <img class="inst" src="images/Piano.jpg" width="600" height="494" title="Piano">
+      <ol class="audio-list">
+        <li><a class="play-sound" data-sound="piano1">Piano 1</a></li>
+        <li><a class="play-sound" data-sound="piano2">Piano 2</a></li>
+        <li><a class="play-sound" data-sound="piano3">Piano 3</a></li>
+        <li><a class="play-sound" data-sound="piano4">Piano 4</a></li>
+        <li><a class="play-sound" data-sound="piano5">Piano 5</a></li>
+      </ol>
+    </section>
+    <!---This is the second page of soundboard: flute section--->
+    <section class="inst-sec inst-display" id ="flute">
+      <img src="images/Flute.jpg" width="600" height="494" title="Flute">
+      <ol class="audio-list">
+        <li><a class="play-sound" data-sound="flute1">Flute 1</a></li>
+        <li><a class="play-sound" data-sound="flute2">Flute 2</a></li>
+        <li><a class="play-sound" data-sound="flute3">Flute 3</a></li>
+        <li><a class="play-sound" data-sound="flute4">Flute 4</a></li>
+        <li><a class="play-sound" data-sound="flute5">Flute 5</a></li>
+      </ol>
+    </section>
+    <!---This is the third page of soundboard: Violin section--->
+    <section class="inst-sec inst-display" id ="violin">
+      <img src="images/Violin.jpg" width="600" height="494" title="Violin">
+      <ol class="audio-list">
+        <li><a class="play-sound" data-sound="violin1">Violin 1</a></li>
+        <li><a class="play-sound" data-sound="violin2">Violin 2</a></li>
+        <li><a class="play-sound" data-sound="violin3">Violin 3</a></li>
+        <li><a class="play-sound" data-sound="violin4">Violin 4</a></li>
+        <li><a class="play-sound" data-sound="violin5">Violin 5</a></li>
+      </ol>
+
+    </section>
+
+    <!---These are invisible audio files used of each 3 sections--->
+    <audio data-sound="piano1" src="sounds/piano/piano1.mp3"></audio>
+    <audio data-sound="piano2" src="sounds/piano/piano2.mp3"></audio>
+    <audio data-sound="piano3" src="sounds/piano/piano3.mp3"></audio>
+    <audio data-sound="piano4" src="sounds/piano/piano4.mp3"></audio>
+    <audio data-sound="piano5" src="sounds/piano/piano5.mp3"></audio>
+    <audio data-sound="flute1" src="sounds/flute/flute1.mp3"></audio>
+    <audio data-sound="flute2" src="sounds/flute/flute2.mp3"></audio>
+    <audio data-sound="flute3" src="sounds/flute/flute3.mp3"></audio>
+    <audio data-sound="flute4" src="sounds/flute/flute4.mp3"></audio>
+    <audio data-sound="flute5" src="sounds/flute/flute5.mp3"></audio>
+    <audio data-sound="violin1" src="sounds/violin/violin1.mp3"></audio>
+    <audio data-sound="violin2" src="sounds/violin/violin2.mp3"></audio>
+    <audio data-sound="violin3" src="sounds/violin/violin3.mp3"></audio>
+    <audio data-sound="violin4" src="sounds/violin/violin4.mp3"></audio>
+    <audio data-sound="violin5" src="sounds/violin/violin5.mp3"></audio>
+
+  </main>
+
+
+
+  <!---This will be sitcky footer on the bottom!--->
+  <footer>
+    <p>All right received by Kia</p>
+  </footer>
+  </body>
+</html>
